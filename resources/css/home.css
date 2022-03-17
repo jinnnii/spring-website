@@ -1,0 +1,73 @@
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(0deg, transparent 20%, rgba(0, 0, 0, 0.5)),
+        url("../images/home.jpg");
+}
+.main-view {
+    height: 100vh;
+}
+header {
+    font-family: var(--title-font);
+}
+.user-form {
+    text-align: right;
+}
+
+.user-form li {
+    margin: 0 0.5em;
+}
+
+.user-form a,
+nav a {
+    color: white;
+}
+
+nav {
+    text-align: center;
+    padding: 1em 0;
+    border-bottom: solid 1px var(--color-lgray);
+}
+
+nav li {
+    margin: 0 2em;
+}
+section {
+    margin-top: 100px;
+}
+.content {
+    display: flex;
+    align-items: flex-end;
+}
+.title {
+    font-family: "title";
+    font-size: 3em;
+    width: 50%;
+}
+.title p:first-child {
+    color: white;
+}
+
+.quick-book-content {
+    background-color: rgba(256, 256, 256, 0.5);
+    width: 70%;
+    height: 140px;
+    font-family: var(--title-font);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2em;
+}
+.quick-book-title {
+    font-size: 1.5em;
+}
+
+.book-btn button {
+    font-family: var(--title-font);
+    background-color: var(--color-main);
+    color: white;
+    height: 44px;
+    border-radius: 30px;
+    width: 150px;
+    margin-left: 2em;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+        />
+        <link rel="stylesheet" href="../resources/css/index.css" />
+        <link rel="stylesheet" href="../resources/css/display-detail.css" />
+        <link rel="stylesheet" href="../resources/css/header.css" />
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="user-form">
+                    <ul>
+                        <li><a href="/member/join">JOIN</a></li>
+                        <li><a href="/member/login">LOGIN</a></li>
+                    </ul>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/exc/guide">이용안내</a></li>
+                    <li><a href="/display/list">전시</a></li>
+                    <li><a href="/etc/edu">교육프로그램</a></li>
+                    <li><a href="/board/list">소식/참여</a></li>
+                    <li><a href="/ext/book">예약</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-deco">
+                <div class="header-title">
+                    <h1>전시</h1>
+                    <p>하단현대미술관에 오신 것을 환영합니다.</p>
+                </div>
+            </div>
+        </header>
+
+        <!--------------header---------------------->
+        <div class="display-header">
+            <div class="container">
+                <div class="display-info">
+                    <p class="display-title">경이로운 전시회</p>
+                    <p class="displya-term">2022.01.13-2022.03.18</p>
+                    <p class="display-place">
+                        <b>전시장소</b> : 전시실 1-3 (지하 1층)
+                    </p>
+                    <p class="display-writer">
+                        <b>참여작가</b> : 홍길동, 정승민, 고영민
+                    </p>
+                    <p class="display-like">
+                        <i class="fa-regular fa-heart"></i>
+                    </p>
+                </div>
+                <div class="display-book">예매하기</div>
+            </div>
+        </div>
+        <div class="display-content container">
+            <img src="../resources/images/display3.jpg" alt="" />
+            <div class="display-tab">
+                <input type="radio" name="tab" id="detail" />
+                <label for="detail">전체 내용</label>
+                <input type="radio" name="tab" id="arts" />
+                <label for="arts">주요 작품</label>
+            </div>
+            <div class="display-detail"></div>
+            <div class="display-arts">
+                <img src="../resources/images/display1.jpg" />
+                <img src="../resources/images/display1.jpg" />
+                <img src="../resources/images/display1.jpg" />
+            </div>
+            <div class="display-nav">
+                <div class="list">목록</div>
+                <div class="display-delete">삭제</div>
+                <div class="display-modify">수정</div>
+            </div>
+        </div>
+        <div class="display-reply">
+            <form action="/reply/register" method="post" class="reply-register">
+                <p>Comment 0</p>
+                <textarea
+                    name="reply"
+                    id="reply"
+                    cols="30"
+                    rows="10"
+                ></textarea>
+                <input type="submit" value="등록하기" />
+            </form>
+
+            <div class="reply-list">
+                <div class="reply">
+                    <div class="reply-icon"></div>
+                    <div class="reply-body">
+                        <p class="reply-id">admin</p>
+                        <div class="reply-content">고구마</div>
+                        <p class="reply-regdate">2022.03.15</p>
+                    </div>
+                    <div class="reply-btn">
+                        <button class="reply-modify">수정</button>
+                        <button class="reply-delete">삭제</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

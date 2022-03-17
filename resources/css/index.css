@@ -1,0 +1,81 @@
+@font-face {
+    font-family: "title";
+    src: url("../font/museum.ttf");
+}
+@font-face {
+    font-family: "scd-5";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-5Medium.woff")
+        format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "scd-4";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-2ExtraLight.woff")
+        format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+:root {
+    --title-font: "scd-5";
+    --content-font: "scd-4";
+
+    --color-main: #191209;
+    --color-dgray: #818181;
+    --color-lgray: #d5d5d5;
+    --color-llgray: #f6f6f6;
+}
+
+* {
+    margin: 0;
+}
+ul,
+li {
+    list-style: none;
+    display: inline;
+    padding-left: 0;
+}
+a {
+    color: var(--color-main);
+    text-decoration: none;
+}
+
+button,
+input {
+    border: none;
+    background-color: transparent;
+    outline-style: none;
+    font-size: 1em;
+}
+
+select {
+    border: none;
+    background-color: transparent;
+    outline-style: none;
+    font-family: var(--content-font);
+    font-size: 1em;
+}
+button {
+    cursor: pointer;
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 50px;
+}
+
+footer {
+    background-color: var(--color-main);
+}
+footer p {
+    color: var(--color-dgray);
+    font-family: var(--content-font);
+}
+footer b {
+    color: white;
+}
+
+.footer-content {
+    padding: 75px 50px 100px 50px;
+}

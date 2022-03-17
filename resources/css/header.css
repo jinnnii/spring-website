@@ -1,0 +1,30 @@
+header {
+    font-family: var(--title-font);
+}
+.user-form {
+    text-align: right;
+}
+
+.user-form li {
+    margin: 0 0.5em;
+}
+
+.user-form a,
+nav a {
+    color: var(--color-main);
+}
+
+nav {
+    text-align: center;
+    padding: 1em 0;
+    border-bottom: solid 1px var(--color-lgray);
+}
+
+nav li {
+    padding: 1em 2em;
+    /* padding: 1em 0; */
+}
+
+nav li:nth-child(2) {
+    border-bottom: solid 5px var(--color-main);
+}
